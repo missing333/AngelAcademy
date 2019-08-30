@@ -1,40 +1,39 @@
 attribute,name,type,count,power,text101,text102,text103,flavortext,mainImage,iconImage,attcolor,,
-Sloth,Slothful Bully,Minion,3,DDD,"Whenever you Study, Corrupt 1.",,,You don't need to Study...,Bully.png,Sloth.png,#707271,dark,Slothful Bully
+Sloth,Slothful Bully,Minion,3,DDD,"Whenever you Study, <br>Discard a card.",,,,Bully.png,Sloth.png,#707271,dark,Slothful Bully
 Pride,Prideful Bully,Minion,3,HHH,"Each Demon phase, <br>reveal an extra Sin card.",,,,Bully.png,Pride.png,#9B00FF,dark,Prideful Bully
-Anger,Angry Bully,Minion,3,PPP,"Each Demon phase, <br>Discard 1 Book.",,,This is a dumb book... ,Bully.png,Anger.png,#E40000,dark,Angry Bully
-Gluttony,Gluttonous Bully,Minion,3,MMM,"Each Demon phase, <br>Discard 4 cards from the Sin Deck",,,,Bully.png,Gluttony.png,#FF7A00,dark,Gluttonous Bully
+Anger,Angry Bully,Minion,3,PPP,"Each Demon phase, <br>Discard 1 Book.",,,,Bully.png,Anger.png,#E40000,dark,Angry Bully
+Gluttony,Gluttonous Bully,Minion,3,MMM,"Each Demon phase, <br>Discard 2 cards from the Virtue Deck",,,,Bully.png,Gluttony.png,#FF7A00,dark,Gluttonous Bully
 Greed,Greedy Bully,Minion,3,GGG,"Each Demon phase, <br>Discard 1 card from your hand.",,,,Bully.png,Greed.png,#FFCB00,dark,Greedy Bully
-Lust,Lusty Bully,Minion,3,CCC,"Each Demon phase, <br>Corrupt 2.",,,Don't bore me...,Bully.png,Lust.png,#005BFF,dark,Lusty Bully
-Envy,Envious Bully,Minion,3,KKK,"Whenever you Transfer, or when anyone Transfers to you, <br>Corrupt 1.",,,,Bully.png,Envy.png,#009800,dark,Envious Bully
-Sloth,Temptation of Sloth,Temptation,2,,Each Player chooses one: <br><br>        -Corrupt 1.<br>        -Return 1 Book from your Bookshelf to your hand.,,,,temptation3.jpg,Sloth.png,#707271,dark,Temptation of Sloth
-Pride,Temptation of Pride,Temptation,2,,Each Player chooses one: <br><br>        -Corrupt 1.<br>        -Shuffle 2 cards from the Sin Deck into the Virtue Deck,,,,temptation3.jpg,Pride.png,#9B00FF,dark,Temptation of Pride
-Anger,Temptation of Anger,Temptation,2,,Each Player chooses one: <br><br>        -Discard 1 Book.<br>        -Corrupt 1.,,,,temptation3.jpg,Anger.png,#E40000,dark,Temptation of Anger
-Gluttony,Temptation of Gluttony,Temptation,2,,Each Player chooses one: <br><br>        -Corrupt 1.<br>        -Discard 3 cards from the Sin Deck.,,,,temptation3.jpg,Gluttony.png,#FF7A00,dark,Temptation of Gluttony
-Greed,Temptation of Greed,Temptation,2,,Each Player chooses one: <br><br>        -Discard 2 cards from hand.<br>        -Draw 2 cards and Corrupt 1.,,,,temptation3.jpg,Greed.png,#FFCB00,dark,Temptation of Greed
-Lust,Temptation of Lust,Temptation,2,,Each Player chooses one: <br><br>        -Discard a card.<br>        -Move a Bully into the Soul Deck.,,,,temptation3.jpg,Lust.png,#005BFF,dark,Temptation of Lust
-Envy,Temptation of Envy,Temptation,2,,"Each Player chooses one: <br><br>        -Discard 1 Book.<br>        -Corrupt 1, then take a Book from another player.",,,,temptation3.jpg,Envy.png,#009800,dark,Temptation of Envy
-Sloth,Corruption of Sloth,Corruption,2,,Corrupt 2,,,Why bother?,corrupted apple.jpg,Sloth.png,#707271,dark,Corruption of Sloth
-Pride,Corruption of Pride,Corruption,2,,Corrupt 2,,,I don't need anyone.,corrupted apple.jpg,Pride.png,#9B00FF,dark,Corruption of Pride
-Anger,Corruption of Anger,Corruption,2,,Corrupt 2,,,Anger...rising....,corrupted apple.jpg,Anger.png,#E40000,dark,Corruption of Anger
-Gluttony,Corruption of Gluttony,Corruption,2,,Corrupt 2,,,Sad?  Eat a cookie.  <br>And another... And another...,corrupted apple.jpg,Gluttony.png,#FF7A00,dark,Corruption of Gluttony
-Greed,Corruption of Greed,Corruption,2,,Corrupt 2,,,This is all mine!,corrupted apple.jpg,Greed.png,#FFCB00,dark,Corruption of Greed
-Lust,Corruption of Lust,Corruption,2,,Corrupt 2,,,You only exist to entertain me.,corrupted apple.jpg,Lust.png,#005BFF,dark,Corruption of Lust
-Envy,Corruption of Envy,Corruption,2,,Corrupt 2,,,Joy in another's sorrow,corrupted apple.jpg,Envy.png,#009800,dark,Corruption of Envy
-Diligence,The Art of Getting Things Done,Virtue,5,,"Study, then Draw a card",All players may Study,Purify 2,,dilBevel.png,dilBevel.png,,,
-Humility,Recognizing the Value of Yourself and Others.,Virtue,5,,All players Draw 1 card,You don't reveal Sin cards this Demon Phase,Each player may Purify,,humBevel.png,humBevel.png,,,
-Patience,Unlocking the Power of Forgiveness,Virtue,5,,Purify,Move a card from the Virtue Discard Pile to any Bookshelf,Discard any 2 Bullies,,patBevel.png,patBevel.png,,,
-Generosity,"Giving Away Gives to You, Too",Virtue,5,,"Transfer, then Draw a card","All players Draw 2 cards, then Discard 1 from hand",Ignore all Corruptions revealed this Demon Phase,,genBevel.png,genBevel.png,,,
-Moderation,Practical Applications of Moderation,Virtue,5,,"Draw 2 cards, then Discard 1","Reveal 2 cards at random from the Soul Deck, then Discard all Sins","Purify, then shuffle 7 cards from the Sin Discard into the Sin Deck",,modBevel.png,modBevel.png,,,
-Chastity,Protecting Holiness,Virtue,5,,"Purify, then Draw a card",Another player draws 3 cards,"For each player, shuffle a Virtue from the Discard Pile into the Sin Deck",,chaBevel.png,chaBevel.png,,,
-Kindness,Fundamentals of Compassion,Virtue,5,,Return a discarded Virtue to another player's hand,"Purify, then all players may Transfer","All players Draw 3 cards, then may Study, then may Transfer.",,kinBevel.png,kinBevel.png,,,
--,  Encounter the Poor,Event,1,,Each Player may Draw 1 card,Each Player Discards 1 Card.,,,alms.jpg,banish 3 old.png,#000000,,  Encounter the Poor
+Lust,Lusty Bully,Minion,3,CCC,"Each Demon phase, <br>Shuffle 3 Sin cards into the Virtue Deck",,,Don't bore me...,Bully.png,Lust.png,#005BFF,dark,Lusty Bully
+Envy,Envious Bully,Minion,3,KKK,"Whenever you Transfer, or when anyone Transfers to you, <br>Corrupt.",,,,Bully.png,Envy.png,#009800,dark,Envious Bully
+Sloth,Temptation of Sloth,Temptation,1,,Each Player chooses one: <br><br>        -Corrupt & Draw 1 card.<br>        -Return 1 Book from your Bookshelf to your hand.,,,,temptation3.jpg,Sloth.png,#707271,dark,Temptation of Sloth
+Pride,Temptation of Pride,Temptation,1,,Each Player chooses one: <br><br>        -Corrupt and Study.<br>        -Shuffle 2 Sin cards into the Virtue Deck,,,,temptation3.jpg,Pride.png,#9B00FF,dark,Temptation of Pride
+Anger,Temptation of Anger,Temptation,1,,Each Player chooses one: <br><br>        -Discard 1 Book.<br>        -Corrupt & Discard a Bully.,,,,temptation3.jpg,Anger.png,#E40000,dark,Temptation of Anger
+Gluttony,Temptation of Gluttony,Temptation,1,,Each Player chooses one: <br><br>        -Corrupt & Draw 1 card.<br>        -Discard 2 cards from the Virtue Deck.,,,,temptation3.jpg,Gluttony.png,#FF7A00,dark,Temptation of Gluttony
+Greed,Temptation of Greed,Temptation,1,,Each Player chooses one: <br><br>        -Discard 2 cards from Hand.<br>        -Corrupt & Draw 2 cards.,,,,temptation3.jpg,Greed.png,#FFCB00,dark,Temptation of Greed
+Lust,Temptation of Lust,Temptation,1,,Each Player chooses one: <br><br>        -Corrupt & Discard a Bully.<br>        -Shuffle 2 Sin cards into the Virtue Deck,,,,temptation3.jpg,Lust.png,#005BFF,dark,Temptation of Lust
+Envy,Temptation of Envy,Temptation,1,,"Each Player chooses one: <br><br>        -Discard another player's Book.<br>        -Corrupt, then take a Book from another player.",,,,temptation3.jpg,Envy.png,#009800,dark,Temptation of Envy
+Sloth,Corruption of Sloth,Corruption,1,,Corrupt 2,,,Why bother?,corrupted apple.jpg,Sloth.png,#707271,dark,Corruption of Sloth
+Pride,Corruption of Pride,Corruption,1,,Corrupt 2,,,I don't need anyone.,corrupted apple.jpg,Pride.png,#9B00FF,dark,Corruption of Pride
+Anger,Corruption of Anger,Corruption,1,,Corrupt 2,,,Anger...rising....,corrupted apple.jpg,Anger.png,#E40000,dark,Corruption of Anger
+Gluttony,Corruption of Gluttony,Corruption,1,,Corrupt 2,,,Sad?  Eat a cookie.  <br>And another... And another...,corrupted apple.jpg,Gluttony.png,#FF7A00,dark,Corruption of Gluttony
+Greed,Corruption of Greed,Corruption,1,,Corrupt 2,,,This is all mine!,corrupted apple.jpg,Greed.png,#FFCB00,dark,Corruption of Greed
+Lust,Corruption of Lust,Corruption,1,,Corrupt 2,,,You only exist to entertain me.,corrupted apple.jpg,Lust.png,#005BFF,dark,Corruption of Lust
+Envy,Corruption of Envy,Corruption,1,,Corrupt 2,,,Joy in another's sorrow,corrupted apple.jpg,Envy.png,#009800,dark,Corruption of Envy
+Diligence,The Art of Getting Things Done,Virtue,6,,"Study, then Draw 1",Purify,"All players Draw a card, then may Study",,dilBevel.png,dilBevel.png,,,
+Humility,Recognizing the Value of Yourself and Others.,Virtue,6,,"Transfer, then put 3 Discarded Virtues under the Virtue Deck",You don't reveal Sin cards this Demon Phase,"Draw 1, then Study, then Transfer",,humBevel.png,humBevel.png,,,
+Patience,Unlocking the Power of Forgiveness,Virtue,6,,Ignore a Bully this turn,Purify,Discard any 2 Bullies,,patBevel.png,patBevel.png,,,
+Generosity,"Giving Away Gives to You, Too",Virtue,6,,"Transfer, then Draw 1",Purify,"All players Draw a card, then may Transfer",,genBevel.png,genBevel.png,,,
+Moderation,Practical Applications of Moderation,Virtue,6,,"Discard 1, then any player Draws 2 ",Place a Discarded Virtue into another player's Bookshelf,"Reveal 3 random cards from the Soul Deck, and Discard the Sins",,modBevel.png,modBevel.png,,,
+Chastity,Protecting Holiness,Virtue,6,,"Study, then put 2 Discarded Virtues under the Virtue Deck","Purify, then Draw 1",Shuffle all Discarded Virtues into the VIrtue Deck,,chaBevel.png,chaBevel.png,,,
+Kindness,Fundamentals of Compassion,Virtue,6,,Return a discarded Virtue to another player's hand,Shuffle 4 Virtues from anywhere into the Sin Deck,Purify 2,,kinBevel.png,kinBevel.png,,,
+-,  Encounter the Poor,Event,1,,Each Player Discards 1 Card.,One Player Draws 1 card.,,,alms.jpg,banish 3 old.png,#000000,,  Encounter the Poor
 -,  Trauma ,Event,1,,Remove 1 card from the Soul Deck from the game without looking at it.,Shuffle 2 cards from the Sin Deck into the Virtue Deck for each player. ,Discard all Virtue cards revealed this way.,,grief.jpg,banish 5 old.png,#000000,,  Trauma 
--,  Cooperation,Event,1,,,Each Player returns a card from the Virtue Discard to their hand.  ,,,cooperation.jpg,banish 3 old.png,#000000,,  Cooperation
--,  Death in the Family,Event,1,,Remove 3 cards at random from the Soul Deck from the game.,,,,grave.png,banish 3 old.png,#000000,,  Death in the Family
--,  Encounter the Sacraments,Event,1,,,Each Player may Draw 1 card.,,,Monstrance.jpg,Banish 1 old.png,#000000,,  Encounter the Sacraments
--,  Bear Witness,Event,1,,Corrupt 1 and Discard 1 Bully.,,,,Monstrance.jpg,Banish 1 old.png,#000000,,  Bear Witness
+-,  Cooperation,Event,1,,,Each Player returns a card from the Virtue Discard to their hand.  ,,,cooperation.jpg,Banish 1 old.png,#000000,,  Cooperation
+-,  Encounter the Sacraments,Event,1,,,One Player Draws 1 card.,,,Monstrance.jpg,Banish 1 old.png,#000000,,  Encounter the Sacraments
+-,  Bear Witness,Event,1,,Corrupt 1 and Discard 1 Bully.,,,,BearWitness.jpg,Banish 1 old.png,#000000,,  Bear Witness
 ,Final Judgement,Event,1,,,,,,FJ.jpg,,,,Final Judgement
-,Marker,Event,1,,,,,,,,#000000,,Marker
+,Marker,Aid,1,,,,,,,,#000000,,Marker
 ,Aid,Aid,2,,,,,,aid.png,,,,
 -,mainBack,Back,,,,,,,AAback.jpg,,#000000,,mainBack
 -,eBack,Back,,,,,,,eventBack.jpg,,#000000,,eBack
