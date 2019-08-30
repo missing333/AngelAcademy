@@ -1,0 +1,253 @@
+﻿UNIT=INCH
+DPI=300
+
+[prototyping]=1
+[version]="v2.5"
+
+linkmulti=count
+LINK=1teXhPA5LEVn2I-rUXX7gD_CebtLBnIJ2eCQfSvIeq2E!GreenCards
+;LINK="cards.csv"
+
+;changelog-
+;8/20/19 - v2.5 - update virtues, add prototyping flag to script.
+;8/15/19 - v2.4 - sin deck can't run out anymore, virtue deck can.
+;8/14/19 - v2.3 - updated Event card Layout
+;8/10/19 - v2.2 - Virtue cards now green, 3 abilities
+;4/15/16- added more book motifs
+;8/11/15- added book motif
+;7/15/15- changed card text to reflect school theme
+
+
+
+
+
+
+if=[prototyping]=0
+CARDSIZE=2.5,3.5
+PAGE=8.5,11.5,PORTRAIT,HV
+else
+CARDSIZE=2.37,3.37
+PAGE=8.5,11.5,PORTRAIT,HV
+endif
+
+
+[all]="1-{(name)}"
+[vrange]=LabelRange([type],"Virtue")
+[frange]=LabelRange([type],"Minion")
+[crange]=LabelRange([type],"Corruption")
+[trange]=LabelRange([type],"Temptation")
+[erange]=LabelRange([type],"Event")
+[FJrange]=LabelRange([name],"Final Judgement")
+
+[maindeck]=rangeadd([vrange],[frange],[crange],[trange])
+[sindeck]=rangeadd([frange],[crange],[trange])
+
+DECK=[maindeck], "Main", #000000, 15%, R, 109
+DECK = [erange], "Events", #000000, 15%, R, 110
+
+
+
+
+[iconSize]=.175
+[maintextsize]=10
+[flavortextsize]=8
+icon=[all],"P","patBook.png"
+icon=[all],"H","humBook.png"
+icon=[all],"K","kinBook.png"
+icon=[all],"M","modBook.png"
+icon=[all],"G","genBook.png"
+icon=[all],"C","chaBook.png"
+icon=[all],"D","dilBook.png"
+icon=[all],X,"Any.png"
+HTMLIMAGE = [all], "(hum)", "humBook.png", [iconSize], [iconSize], P
+HTMLIMAGE = [all], "(dil)", "dilBook.png", [iconSize], [iconSize], P
+HTMLIMAGE = [all], "(gen)", "genBook.png", [iconSize], [iconSize], P
+HTMLIMAGE = [all], "(kin)", "kinBook.png", [iconSize], [iconSize], P
+HTMLIMAGE = [all], "(cha)", "chaBook.png", [iconSize], [iconSize], P
+HTMLIMAGE = [all], "(pat)", "patBook.png", [iconSize], [iconSize], P
+HTMLIMAGE = [all], "(mod)", "modBook.png", [iconSize], [iconSize], P
+HTMLIMAGE = [all], "(any)", "Any.png", [iconSize], [iconSize], P
+{[html]="<mainfont><br>[text101]</b></mainfont><br><flavorfont><i>[flavortext]</i></flavorfont>"}
+
+
+;VirtueFrame, FiendFrame(bully), TemptationFrame, CorruptionFrame, EventFrame, MarkerFrame
+<vframe> = 3.5%, 3.5%, 91%, 94%
+<fframe> = 3.5%, 3.5%, 91%, 94%
+<tframe> = 3.5%, 3.5%, 91%, 94%
+<cframe> = 3.5%, 3.5%, 91%, 94%
+<eframe> = 1%, 1%, 98%, 98%
+<mframe> = 3.5%, 3.5%, 91%, 94%
+
+;---------base Sin card----------
+;name's colorbox
+RECTANGLE=[sindeck],<fframe, TS, 15%%>,[attcolor],[attcolor]
+;name's text
+FONT = Arial, 13, BT, #FFFFFF
+TEXT = [sindeck], [name], 5%, 6%, 90% ,10%, CENTER, WWCENTER
+
+;image
+if=[prototyping]=0
+IMAGE = [sindeck], [mainImage],  <fframe, TS, 52.5%%>,0,NTP
+
+;text greybox
+RECTANGLE=[sindeck],<fframe, TS, 0>,#555555
+endif
+
+;-------TEMPTATION CARDS-------
+if=[type]="Temptation"
+
+;Card Text
+if=[prototyping]=1
+htmlFONT=mainfont, "Times New Roman",[maintextsize]-2,,#000000, left
+htmlFONT=flavorfont, "Times New Roman",[flavortextsize],,#000000, center
+else
+htmlFONT=mainfont, "Times New Roman",[maintextsize],,#FFFFFF, left
+htmlFONT=flavorfont, "Times New Roman",[flavortextsize],,#FFFFFF, center
+endif
+HTMLTEXT=[all],[html], 9%, 63%, 84%, 40%, #555555,0,T
+
+
+;-------BULLY CARDS-------
+elseif=[type]="Minion"
+
+;Card Text
+if=[prototyping]=1
+htmlFONT=mainfont, "Times New Roman",[maintextsize],,#000000, center
+htmlFONT=flavorfont, "Times New Roman",[flavortextsize],,#000000, center
+else
+htmlFONT=mainfont, "Times New Roman",[maintextsize],,#FFFFFF, center
+htmlFONT=flavorfont, "Times New Roman",[flavortextsize],,#FFFFFF, center
+endif
+HTMLTEXT=[all],[html], 9%, 63%, 84%, 40%, #555555,0,T
+
+;Expell Reqs
+;ROUNDRECT=[all],20%,68%,60%,6%,[attcolor],#FFFFFF,.01
+;FONT = "Times New Roman", 10, BT, #000000
+;TEXT = [all], "To Expel: ",25%, 68.5%, 25%,16%, CENTER, TOP
+;icons=[all],[power], 51%, 68.5%, 25%, 16%,.2,.2,00,N,LEFT,TOP
+
+
+
+;-------CORRUPTION CARDS-------
+elseif=[type]="Corruption"
+
+;Card Text
+if=[prototyping]=1
+htmlFONT=mainfont, "Times New Roman",[maintextsize],,#000000, center
+htmlFONT=flavorfont, "Times New Roman",[flavortextsize],,#000000, center
+else
+htmlFONT=mainfont, "Times New Roman",[maintextsize],,#FFFFFF, center
+htmlFONT=flavorfont, "Times New Roman",[flavortextsize],,#FFFFFF, center
+endif
+HTMLTEXT=[all],[html], 9%, 63%, 84%, 40%, #555555,0,T
+
+
+endif
+
+;black border
+ROUNDRECT=[sindeck],0,0,100%,100%,#000000,EMPTY,.3
+
+
+
+
+
+;-------VIRTUE CARDS-------
+if=[type]="Virtue"
+
+if=[prototyping]=0
+IMAGE=[all],"AAtemplate.png",0,0,100%,100%
+endif
+
+if=[prototyping]=0
+FONT="DK Cool Crayon",22,T,#FFFFFF
+else
+FONT="DK Cool Crayon",18,T,#000000
+endif
+
+;Title Text
+TEXT = [all], [attribute],22%, 4.5%, 75%,20%, LEFT, TOP,0,100
+IMAGE=[all],[iconImage],44.5%,82%,.42,.42,0,N
+
+if=[prototyping]=0
+FONT="DK Cool Crayon",10,T,#FFFFFF
+else
+FONT="DK Cool Crayon",8,T,#000000
+endif
+
+;Type text 1
+TEXT = [all], [text101],22%, 21%, 70%,16%, LEFT, WWCENTER
+IMAGE=[all],[iconImage],9%,26%,.2,.2,0,N
+
+;Type text 2
+TEXT = [all], [text102],22%, 39%, 70%,16%, LEFT, WWCENTER
+IMAGE=[all],[iconImage],7%,43%,.2,.2,0,N
+IMAGE=[all],[iconImage],11%,47%,.2,.2,0,N
+
+;Type text 3
+TEXT = [all], [text103],22%, 58%, 70%,16%, LEFT, WWCENTER
+IMAGE=[all],[iconImage],9%,61.5%,.2,.2,0,N
+IMAGE=[all],[iconImage],12.5%,66%,.2,.2,0,N
+IMAGE=[all],[iconImage],6.5%,66%,.2,.2,0,N
+
+;white border
+ROUNDRECT=[vrange],0%,0%,100%,100%,#FFFFFF,EMPTY,.3
+
+endif
+
+
+;-------EVENT CARDS-------
+if=[type]="Event"
+RECTANGLE = [all], 0,0,100%, 100%, #FFFFEE,#FFFFEE
+IMAGE=[all],[mainImage],30%, 7%, 60%, 86%,90,P
+
+;Name
+FONT="Newborough",14,BNF,#9F8170,#FFFFEE
+TEXT=[all],[name],<eframe, TR,70%%, 15%%>,CENTER,wwcenter,0
+
+;Box borders
+RECTANGLE = [all], <eframe, TL,30%%, 50%%>, #000000,#000000,.05
+RECTANGLE = [all], <eframe, BL,30%%, 50%%>, #000000,empty,.05
+
+;Dark Side
+FONT = "Times New Roman", 8, , #FFFFFF,#000000
+TEXT = [all], [text101], 6%,4%,20%,40%, CENTER, WWCENTER, 90
+;Light Side
+FONT = "Times New Roman", 8, , #000000,#FFFFEE
+TEXT = [all], [text102], 6%,54%,20%,40%, CENTER, WWCENTER, 90
+IMAGE=[all],[iconImage],25%,43%,.5,.5,90,N
+
+
+
+elseif=[type]="Back"
+IMAGE = [all], [mainImage],0,0,100%,100%,0,NT
+endif
+
+
+
+;-------MISC CARDS-------
+if=[name]="Final Judgement"
+IMAGE = [all], [mainImage],0,0,100%,100%,0,N
+ROUNDRECT=[all],2%,2%,96%,96%,#000000,EMPTY,.2 ;black border
+
+elseif=[name]="Marker"
+RECTANGLE=[all],0,0,100%,100%,#FFFFFF,#FFFFFF
+FONT = Arial,12,BNF,#000000,#FFFFFF
+TEXT = [all], "Soul Deck", <mframe, CL, 25%%, 100%%>, CENTER, WWCENTER, 90
+TEXT = [all], "Event Deck", <mframe, CR, 25%%, 100%%>, CENTER, WWCENTER, 90
+TEXT = [all], "Virtue Deck", <mframe, BR, 75%%, 15%%>, CENTER, WWCENTER, 180
+TEXT = [all], "Sin Deck", <mframe, TR, 75%%, 15%%>, CENTER, WWCENTER, 0
+IMAGE = [all], ShoulderDevil.png,2%,5%,37%,30%,90,N
+IMAGE = [all], ShoulderAngel.png,2%,65%,37%,30%,90,N
+ROUNDRECT=[all],2%,2%,96%,96%,#000000,EMPTY,.2 ;black border
+
+elseif=[name]="Aid"
+IMAGE = [all], [mainImage],0,0,100%,100%,0,NP
+
+endif
+
+
+if=[prototyping]=1
+;Version number
+FONT = "Times New Roman",6,NFT,#000000,#000000
+TEXT = [all], [version], 86%, 82%, 10%, 20%, CENTER, WWCENTER, -90
+endif
