@@ -26,7 +26,7 @@ Patience,Unlocking the Power of Forgiveness,Virtue,7,,Ignore any Bully this turn
 Generosity,"Giving Away Gives to You, Too",Virtue,7,,"Draw 2, then Transfer",Purify,All players may Transfer,,genBevel.png,genBevel.png,,,
 Moderation,Practical Applications of Moderation,Virtue,7,,"Discard 1, then any player Draws 2 ",Place a Discarded Virtue into another player's Bookshelf,"Reveal 3 random cards from the Soul Deck, and Discard the Sins",,modBevel.png,modBevel.png,,,
 Chastity,Protecting Holiness,Virtue,7,,Return a discarded Virtue to another player's hand,"Purify, then Draw 1",Shuffle all Discarded Virtues into the VIrtue Deck,,chaBevel.png,chaBevel.png,,,
-Kindness,Fundamentals of Compassion,Virtue,7,,Another player gains 1 Action this turn,Shuffle 4 Virtues from anywhere into the Sin Deck,Purify 2,,kinBevel.png,kinBevel.png,,,
+Kindness,Fundamentals of Compassion,Virtue,7,,Another player gains 1 Action this turn.  Draw 1,Shuffle 4 Virtues from anywhere into the Sin Deck,Purify 2,,kinBevel.png,kinBevel.png,,,
 -,  Encounter the Poor,Event,1,,,One player Discards a Book,,,alms.jpg,banish 3 old.png,#000000,,  Encounter the Poor
 -,  Trauma ,Event,1,,Remove 1 card from the Soul Deck from the game without looking at it.,Shuffle 2 cards from the Sin Deck into the Virtue Deck for each player. ,,,grief.jpg,banish 5 old.png,#000000,,  Trauma 
 -,  Cooperation,Event,1,,One player returns a Discarded Virtue to their hand,,,,cooperation.jpg,Banish 1 old.png,#000000,,  Cooperation

@@ -2,13 +2,15 @@
 DPI=300
 
 [prototyping]=1
-[version]="v2.5"
+[version]="v2.7"
 
 linkmulti=count
 LINK=1teXhPA5LEVn2I-rUXX7gD_CebtLBnIJ2eCQfSvIeq2E!GreenCards
 ;LINK="cards.csv"
 
 ;changelog-
+;8/29/19 - v2.7 - no more temptations, more Virtue cards
+;8/29/19 - v2.6 - update virtues - more purifies on 2nd lvl
 ;8/20/19 - v2.5 - update virtues, add prototyping flag to script.
 ;8/15/19 - v2.4 - sin deck can't run out anymore, virtue deck can.
 ;8/14/19 - v2.3 - updated Event card Layout
@@ -26,7 +28,7 @@ if=[prototyping]=0
 CARDSIZE=2.5,3.5
 PAGE=8.5,11.5,PORTRAIT,HV
 else
-CARDSIZE=2.37,3.37
+CARDSIZE=2.41,3.41
 PAGE=8.5,11.5,PORTRAIT,HV
 endif
 
